@@ -35,4 +35,18 @@ return [
         ],
     ],
 
+    'apple' => [
+        'pass_certificate' => env('APPLE_PASS_CERTIFICATE_PATH'),
+        'pass_password' => env('APPLE_PASS_CERTIFICATE_PASSWORD'),
+        'pass_type_identifier' => env('APPLE_PASS_TYPE_IDENTIFIER', 'pass.org.bahamasnationaltrust.member'),
+        'team_identifier' => env('APPLE_TEAM_IDENTIFIER', 'BNTTEAMID123'),
+    ],
+
+    'google' => [
+        'issuer_id' => env('GOOGLE_WALLET_ISSUER_ID'),
+        'class_id' => env('GOOGLE_WALLET_CLASS_ID', 'BNTMemberClass'),
+        'client_email' => env('GOOGLE_WALLET_CLIENT_EMAIL'),
+        'private_key' => env('GOOGLE_WALLET_PRIVATE_KEY'),
+    ],
+
 ];
